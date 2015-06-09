@@ -1,23 +1,27 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>ListApp</title>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/main.css">
+	<script type="text/javascript" src="listapp.js"></script>
 </head>
 <body>
 	<div class="main">
 		<h1 class="header">ListApp</h1>
 		<div class="add">
 			<input id="item">
-			<button class="additem">Add Item</button>
+			<button class="additem" onclick="addItem(document.getElementById('item').value)">Add Item</button>
 		</div>
-	<ul class="fa-ul">
-  <li><i class="fa-li fa fa-check-square"></i>Eggs</li>
-  <li><i class="fa-li fa fa-check-square"></i>Milk</li>
-  <li><i class="fa-li fa fa-check-square"></i>Cheese</li>
-  <li><i class="fa-li fa fa-check-square"></i>Bread</li>
+	<ul id="list" class="fa-ul">
+  <!--
+  <li onclick="checkItem()"><i class="fa-li fa fa-square-o"></i>Eggs</li>
+  <li><i class="fa-li fa fa-check-square-o"></i>Milk</li>
+  <li><i class="fa-li fa fa-plus-square-o"></i>Cheese</li>
+  <li><i class="fa-li fa fa-minus-square-o "></i>Bread</li>
+  //-->
+
 	</ul>
 		</div>
 </body>
